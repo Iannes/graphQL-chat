@@ -16,7 +16,7 @@ const App = ({ chatsQuery, createChatMutation }) => {
   }, []);
 
   const createChat = async e => {
-    if (e.key === "Enter" || e.keyCode === 13 || e.charCode === 13) {
+    if (e.keyCode === 13 || e.charCode === 13) {
       await createChatMutation({
         variables: { content, from }
       });

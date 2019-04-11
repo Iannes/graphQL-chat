@@ -1,6 +1,6 @@
 const ChatBoxStyles = {
   wrapper: {
-    backgroundColor: "#f2f2f2",
+    backgroundColor: "#fff",
     padding: 5
   },
   author: {

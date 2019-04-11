@@ -4,7 +4,7 @@ const StyleSheet = {
     position: "relative"
   },
   wrapper: {
-    backgroundColor: "#eee",
+    backgroundColor: "#fff",
     margin: "0 auto",
     padding: "0 20",
     width: "100%",
@@ -26,15 +26,15 @@ const StyleSheet = {
     width: "100%"
   },
   chatTitleWrapper: {
-    backgroundColor: "#6fb0dc",
-    borderBottom: "1px solid #5887a7",
+    backgroundColor: "transparent",
+    boxShadow: "rgb(204, 204, 204) 1px 1px 19px 2px",
     padding: "20px 10px"
   },
   chatTitle: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    color: "#fff",
+    color: "#4b4b4b",
     fontSize: 22,
     fontWeight: "bold",
     margin: 0,
@@ -42,27 +42,35 @@ const StyleSheet = {
     width: "100%"
   },
   username: {
-    color: "#eee",
+    color: "#4b4b4b",
     cursor: "pointer",
     fontSize: 16,
     fontWeight: "normal",
     textAlign: "right"
   },
   chatInputWrapper: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "whitesmoke",
     width: "100%",
-    position: "relative",
-    bottom: 0
+    position: "fixed",
+    bottom: 0,
+    fontSize: "16px",
+    paddingLeft: "5px",
+    transition: "all .5s ease"
   },
   chatInput: {
     border: 0,
     borderTopWidth: 1,
     borderRadius: 0,
     padding: 5,
-    margin: 0
+    margin: 0,
+    width: "100%",
+    borderBottom: "1px solid #8171d6",
+    boxShadow: "rgb(204, 204, 204) 1px 1px 19px 2px",
+    background: "transparent",
+    transition: "all .5s ease"
   },
   chatBody: {
-    padding: "20px 20px 0 20px"
+    padding: "20px 2px 0px"
   }
 };
 

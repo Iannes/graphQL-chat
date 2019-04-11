@@ -6,7 +6,7 @@ const Header = ({ style, title, from, onclick }) => {
       <h2 style={style.chatTitle}>
         <span>{title}</span>
         <span style={style.username} onClick={onclick} title="logout">
-          {from}
+          Hello, {from}
         </span>
       </h2>
     </header>

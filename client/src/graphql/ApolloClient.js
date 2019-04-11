@@ -4,5 +4,6 @@ import link from "./WebSocket";
 
 export default new ApolloClient({
   link,
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
+  connectToDevTools: true
 });

@@ -21,7 +21,9 @@ const style = {
     margin: 0,
     height: 40,
     borderBottom: "1px solid #0099a9",
-    borderRadius: 0
+    borderRadius: 0,
+    width: "100%",
+    boxShadow: "rgb(204, 204, 204) 1px 1px 19px 2px"
   },
   button: {
     backgroundColor: "#FFFFFF",
@@ -56,9 +58,6 @@ const Form = ({ signin }) => {
           onKeyPress={submit}
           onChange={e => setUsername(e.target.value)}
         />
-        {/* <button style={style.button} onClick={() => signin(username)}>
-          enter
-        </button> */}
       </section>
     </fieldset>
   );

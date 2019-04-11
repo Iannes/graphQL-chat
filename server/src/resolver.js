@@ -1,6 +1,12 @@
 import composeId from "./helpers";
 const CHAT_CHANNEL = "CHAT_CHANNEL";
-let chats = [{ id: 1, from: "tester", content: "Testing", createdAt: "" }];
+const mock = {
+  id: 1,
+  from: "tester",
+  content: "Testing",
+  createdAt: new Date().toISOString()
+};
+let chats = [...mock];
 
 export default {
   Query: {
