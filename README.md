@@ -1,4 +1,4 @@
-# Graphql Chat Sample
+# Graphql Real Time Chat
 
 ### Server
 
