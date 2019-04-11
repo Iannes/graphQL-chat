@@ -19,7 +19,7 @@ const ChatBox = ({
         style={style}
         from={from}
         setFrom={setFrom}
-        title="Hitched"
+        title="Chat"
         onclick={onclick}
       />
       <MessageList style={style} chatsQuery={chatsQuery} from={from} />

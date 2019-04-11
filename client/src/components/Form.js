@@ -20,7 +20,7 @@ const style = {
     padding: 5,
     margin: 0,
     height: 40,
-    borderBottom: "1px solid green",
+    borderBottom: "1px solid #0099a9",
     borderRadius: 0
   },
   button: {
@@ -44,7 +44,7 @@ const Form = ({ signin }) => {
   return (
     <fieldset style={style.wrapper}>
       <section style={style.label}>
-        <label>Your username:</label>
+        <label>Type Username To Start:</label>
       </section>
 
       <section>

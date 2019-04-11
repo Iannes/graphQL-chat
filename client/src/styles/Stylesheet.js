@@ -16,7 +16,10 @@ const StyleSheet = {
     flexDirection: "column"
   },
   signupWrapper: {
-    padding: 50
+    padding: 50,
+    background: "white",
+    border: 0,
+    borderRadius: "9px"
   },
   chatWrapper: {
     padding: 0,
