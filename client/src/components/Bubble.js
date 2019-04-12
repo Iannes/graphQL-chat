@@ -7,8 +7,8 @@ const ActiveStyles = {
   color: "#fff",
   padding: "20px",
   position: "relative",
-  background: "#46cfd5",
-  borderRadius: "50% 0 0 0",
+  background: "#5f387b",
+  borderRadius: ".4em",
   fontSize: "18px",
   boxShadow: "#ccc 0 0 2px 1px"
 };
@@ -16,14 +16,29 @@ const NonActiveStyles = {
   color: "#fff",
   padding: "15px",
   position: "relative",
-  background: "#537be7",
-  borderRadius: "50% 1000px 20px 0",
+  background: "#397f8e",
+  borderRadius: ".4em",
   fontSize: "18px",
-  boxShadow: "#ccc 0 0 2px 1px"
+  boxShadow: "#ccc 0 0 2px 1px",
+  "&::after": {
+    content: '""',
+    position: "absolute",
+    bottom: 0,
+    left: "50%",
+    width: "0",
+    height: "0",
+    display: "block",
+    border: "35px solid transparent",
+    borderTopColor: "#27a834",
+    borderBottom: "0",
+    borderRight: "0",
+    marginLeft: "-17.5px",
+    marginBottom: "-35px"
+  }
 };
 
 const NonActiveContainer = {
-  maxWidth: "30%",
+  maxWidth: "70%",
   position: "relative",
   left: "0",
   marginRight: "auto",
@@ -31,7 +46,7 @@ const NonActiveContainer = {
   marginBottom: "30px"
 };
 const ActiveContainer = {
-  maxWidth: "30%",
+  maxWidth: "70%",
   position: "relative",
   right: "0",
   marginLeft: "auto",
@@ -44,7 +59,13 @@ const Chatbox = ({ message, currentUser, className }) => (
     <article
       style={!!currentUser ? { ...ActiveContainer } : { ...NonActiveContainer }}
     >
-      <h5 style={!!currentUser ? { ...author, color: "#5887a7" } : author}>
+      <h5
+        style={
+          !!currentUser
+            ? { ...author, color: "#5887a7", textAlign: "right" }
+            : author
+        }
+      >
         <span
           style={{
             display: "inline-flex",

@@ -23,8 +23,7 @@ export default {
         createdAt: new Date().toISOString()
       };
 
-      chats = [chat, ...chats];
-      chats = chats.splice(0, 8);
+      chats = [...chats, chat];
       pubsub.publish(CHAT_CHANNEL, { messageSent: chat });
 
       return chat;
