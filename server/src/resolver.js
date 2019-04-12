@@ -24,6 +24,7 @@ export default {
       };
 
       chats = [...chats, chat];
+      chats = chats.splice(0, 8);
       pubsub.publish(CHAT_CHANNEL, { messageSent: chat });
 
       return chat;
