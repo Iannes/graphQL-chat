@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "reactstrap";
 
 const style = {
   wrapper: {
@@ -6,7 +7,9 @@ const style = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    padding: 5
+    padding: 5,
+    width: "70%",
+    margin: "auto"
   },
   label: {
     fontSize: 16,
@@ -17,49 +20,73 @@ const style = {
   input: {
     backgroundColor: "transparent",
     border: "0",
-    padding: 5,
+    padding: 10,
     margin: 0,
     height: 40,
     borderBottom: "1px solid #0099a9",
     borderRadius: 0,
     width: "100%",
-    boxShadow: "rgb(204, 204, 204) 1px 1px 19px 2px"
+    boxShadow: "rgb(204, 204, 204) 1px 1px 19px 2px",
+    fontFamily: "sans-serif",
+    fontSize: "16px"
   },
   button: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#0099a9",
     border: "0",
     padding: 5,
     margin: "0 0 0 5px",
-    height: 40
+    height: 40,
+    margin: "10px auto",
+    width: "100%",
+    fontSize: "18px",
+    fontFamily: "sans-serif"
   }
 };
 
 const Form = ({ signin }) => {
   const [username, setUsername] = useState("");
 
+  const handleSubmit = e => {
+    e.preventDefault();
+    signin(username);
+  };
+
   const submit = async e => {
     if (e.key === "Enter") {
+      e.preventDefault();
       signin(username);
     }
   };
 
   return (
-    <fieldset style={style.wrapper}>
-      <section style={style.label}>
-        <label>Type Username To Start:</label>
-      </section>
+    <form style={{ textAlign: "center" }} onSubmit={handleSubmit}>
+      <fieldset style={style.wrapper}>
+        <section style={style.label}>
+          <label>
+            <h1>Create account</h1>
+          </label>
+        </section>
 
-      <section>
-        <input
-          style={style.input}
-          type="text"
-          placeholder="Your Username"
-          value={username}
-          onKeyPress={submit}
-          onChange={e => setUsername(e.target.value)}
-        />
-      </section>
-    </fieldset>
+        <section>
+          <input
+            style={style.input}
+            type="text"
+            placeholder="Your Username"
+            value={username}
+            onKeyPress={submit}
+            onChange={e => setUsername(e.target.value)}
+          />
+        </section>
+        <button
+          style={style.button}
+          class="btn btn-primary"
+          type="submit"
+          onSubmit={handleSubmit}
+        >
+          Submit
+        </button>
+      </fieldset>
+    </form>
   );
 };
 

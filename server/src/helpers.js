@@ -1,8 +1,8 @@
-const _createId = () =>
+const _generateRandomNum = () =>
   Math.random()
     .toString(36)
     .substr(2, 9);
 
-const composeId = () => `_${_createId()}`;
+const createId = () => `_${_generateRandomNum()}`;
 
-export default composeId;
+export default createId;

@@ -19,16 +19,20 @@ const StyleSheet = {
     padding: 50,
     background: "white",
     border: 0,
-    borderRadius: "9px"
+    borderRadius: "6px",
+    minWidth: "95%"
   },
   chatWrapper: {
     padding: 0,
     width: "100%"
   },
   chatTitleWrapper: {
-    backgroundColor: "transparent",
-    boxShadow: "rgb(204, 204, 204) 1px 1px 19px 2px",
-    padding: "20px 10px"
+    backgroundColor: "white",
+    boxShadow: "#397f8e 1px 1px 1px 0",
+    padding: "10px",
+    width: "100%",
+    position: "fixed",
+    zIndex: "9"
   },
   chatTitle: {
     display: "flex",
@@ -65,12 +69,11 @@ const StyleSheet = {
     margin: 0,
     width: "100%",
     borderBottom: "1px solid #8171d6",
-    boxShadow: "rgb(204, 204, 204) 1px 1px 19px 2px",
     background: "transparent",
     transition: "all .5s ease"
   },
   chatBody: {
-    padding: "20px 2px 0px"
+    padding: "50px 2px 0px"
   }
 };
 

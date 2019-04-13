@@ -1,13 +1,8 @@
-import composeId from "./helpers";
+import createId from "./helpers";
+import mocks from "./mocks";
 const CHAT_CHANNEL = "CHAT_CHANNEL";
-const mock = {
-  id: 1,
-  from: "tester",
-  content: "Testing",
-  createdAt: new Date().toISOString()
-};
-let chats = [...mock];
 
+let chats = mocks;
 export default {
   Query: {
     chats: (root, args, context) => chats
@@ -15,7 +10,7 @@ export default {
 
   Mutation: {
     createChat: (root, { content, from }, { pubsub }) => {
-      const id = composeId();
+      const id = createId();
       const chat = {
         id,
         content,

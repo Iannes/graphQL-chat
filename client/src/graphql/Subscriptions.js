@@ -13,11 +13,12 @@ const subscribeToNewChats = chatsQuery => {
       }
     `,
     updateQuery: (previousData, { subscriptionData }) => {
+      console.log(previousData, subscriptionData);
       return {
         chats: [
           subscriptionData.data.messageSent,
           ...previousData.chats
-        ].splice(0, 8)
+        ].splice(0, 9)
       };
     }
   });

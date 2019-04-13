@@ -6,7 +6,7 @@ const Input = ({ style, content, setContent, createChat }) => {
       <input
         style={style.chatInput}
         type="text"
-        placeholder="Start typing"
+        placeholder="Type a message"
         value={content}
         onKeyPress={createChat}
         onChange={e => setContent(e.target.value)}
