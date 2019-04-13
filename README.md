@@ -15,7 +15,7 @@ This example uses the following technologies:
   `yarn start` or `npm run start`
 
 - ### Server
-  -   - [GraphQL Yoga](https://github.com/prisma/graphql-yoga)
+  -  [GraphQL Yoga](https://github.com/prisma/graphql-yoga)
 
 - ### Quick Setup 
   - From the server folder, run:
