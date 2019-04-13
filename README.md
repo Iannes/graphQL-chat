@@ -6,7 +6,7 @@ This example uses the following technologies:
   - [Apollo Client 2.0](https://github.com/apollographql/apollo-client)
   - [React App](https://github.com/facebookincubator/create-react-app)
   - [GraphQL Playground (GraphiQL replacement)](https://github.com/graphcool/graphql-playground)
-  - [Netlify Integration](https://www.netlify.com/)
+  - [Netlify](https://www.netlify.com/)
   
 - ### Quick Setup  
   - From the client folder, run:
