@@ -28,3 +28,6 @@ This example uses the following technologies:
 
   - To run queries in the GraphQL playground head over to
 `http://localhost:4000/`, after you have run the `yarn dev` server script.
+
+- ### Todo
+  - AWS AppSync Integration
