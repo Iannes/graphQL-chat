@@ -1,23 +1,23 @@
-# Graphql Real Time Chat
+# Real Time Chat App
 
-This example uses the following technologies:
+This example uses the following tech:
 
 - ### Client
   - [Apollo Client 2.0](https://github.com/apollographql/apollo-client)
   - [React App](https://github.com/facebookincubator/create-react-app)
   - [GraphQL Playground (GraphiQL replacement)](https://github.com/graphcool/graphql-playground)
   - [Netlify](https://www.netlify.com/)
-  
-- ### Quick Setup  
-  - From the client folder, run:
-  `yarn install` or `npm install`
-  - To run locally watching for changes:
-  `yarn start` or `npm run start`
 
 - ### Server
   -  [GraphQL Yoga](https://github.com/prisma/graphql-yoga)
+   
+ - ### Client Setup  
+    - From the client folder, run:
+  `yarn install` or `npm install`
+    - To run locally watching for changes:
+  `yarn start` or `npm run start`
 
-- ### Quick Setup 
+- ### Server Setup 
   - From the server folder, run:
   `yarn install` or `npm install`
   - To run locally run:
