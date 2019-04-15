@@ -14,13 +14,13 @@ This example uses the following tech:
 - ### Client Setup
 
   - From the client folder, run:
-    `yarn install` or `npm install`
+    `yarn` or `npm install`
   - To run locally watching for changes:
     `yarn start` or `npm run start`
 
 - ### Server Setup
   - From the server folder, run:
-    `yarn install` or `npm install`
+    `yarn` or `npm install`
   - To run locally run:
     `yarn dev` or `npm run dev`
 

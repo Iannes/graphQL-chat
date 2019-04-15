@@ -1,7 +1,7 @@
 let mocks = [
   {
     id: 1,
-    from: "Hitched",
+    from: "ChatBot",
     content: "This is your first conversation",
     createdAt: new Date().toISOString()
   }

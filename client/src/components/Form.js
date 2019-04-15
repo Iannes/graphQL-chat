@@ -33,9 +33,8 @@ const style = {
     backgroundColor: "#0099a9",
     border: "0",
     padding: 5,
-    margin: "0 0 0 5px",
-    height: 40,
     margin: "10px auto",
+    height: 40,
     width: "100%",
     fontSize: "18px",
     fontFamily: "sans-serif"
@@ -78,7 +77,7 @@ const Form = ({ signin }) => {
         </section>
         <button
           style={style.button}
-          class="btn btn-primary"
+          className="btn btn-primary"
           type="submit"
           onSubmit={handleSubmit}
         >
